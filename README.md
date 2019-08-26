@@ -1,14 +1,6 @@
 # easy_contact_picker
 
-联系人选择器.
+Flutter 通讯录联系人选择器，返回联系人列表或者打开Native通讯录
 
 ## Getting Started
-
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+1.
