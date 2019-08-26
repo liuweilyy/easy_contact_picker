@@ -32,12 +32,12 @@ Future<List<Contact>> selectContacts() async {
   }
 ```
 #### 2.调用示例<br>
-##### page中声明<br>
+##### Widget中声明<br>
 ```
 Contact _contact = new Contact(fullName: "", phoneNumber: "");
 final EasyContactPicker _contactPicker = new EasyContactPicker();
 ```
-##### page中调用<br>
+##### Widget中调用<br>
 ```
 _getContactData() async{
     Contact contact = await _contactPicker.selectContactWithNative();
@@ -59,12 +59,12 @@ Future<Contact> selectContactWithNative() async {
   }
 ```
 ##### 2.调用示例<br>
-###### page中声明<br>
+###### Widget中声明<br>
 ```
   List<Contact> _list = new List();
   final EasyContactPicker _contactPicker = new EasyContactPicker();
 ```
-##### page中调用<br>
+##### Widget中调用<br>
 ```
 _getContactData() async{
     List<Contact> list = await _contactPicker.selectContacts();
