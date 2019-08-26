@@ -15,6 +15,19 @@ dependencies:
 ```
 import 'package:easy_contact_picker/easy_contact_picker.dart';
 ```
+### 添加权限
+#### Android
+```
+<!-- 读取联系人 -->
+<uses-permission android:name="android.permission.READ_CONTACTS"/>
+```
+#### iOS<br>
+##### info.plist中添加读取通讯录权限
+``` 
+Privacy - Contacts Usage Description
+```
+##### Background Modes中 Background fetch 和 Remote notification打对勾
+
 ### 示例1 打开Native通讯录<br>
 #### 1.EasyContactPicker中打开Native通讯录方法
 ```
