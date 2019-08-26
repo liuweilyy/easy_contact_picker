@@ -1,6 +1,6 @@
 # easy_contact_picker
 
-A new Flutter plugin.
+联系人选择器.
 
 ## Getting Started
 
