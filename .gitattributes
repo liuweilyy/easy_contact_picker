@@ -1,0 +1,5 @@
+*.yml linguist-language=Dart 
+*.html linguist-language=Dart 
+*.js linguist-language=Dart 
+*.xml linguist-language=Dart
+*.css linguist-language=Dart
