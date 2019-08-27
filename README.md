@@ -6,7 +6,7 @@ Flutter 通讯录联系人选择器，同时支持Android和iOS。
 在调用获取联系人方法之前需要先获取获取权限,<br>
 可以打开Native通讯录选择联系人，也可以返回通讯录列表，自己构建UI。
 ## 用法
-### 添加这一行到pubspec.yaml,暂时只能用git
+### 添加这一行到pubspec.yaml
 ```
   easy_contact_picker: ^0.0.2
 ```
