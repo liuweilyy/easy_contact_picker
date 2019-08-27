@@ -8,10 +8,10 @@ Flutter 通讯录联系人选择器，同时支持Android和iOS。
 ## 用法
 ### 添加这一行到pubspec.yaml,暂时只能用git
 ```
-easy_contact_picker:
-    git: https://github.com/liuweilyy/easy_contact_picker.git
+  easy_contact_picker: ^0.0.2
 ```
-### 导包
+
+### 引用
 ```
 import 'package:easy_contact_picker/easy_contact_picker.dart';
 ```
