@@ -14,16 +14,9 @@ class _HostPageState extends State<HostPage> with AutomaticKeepAliveClientMixin{
   final EasyContactPicker _contactPicker = new EasyContactPicker();
 
   _openAddressBook() async{
-    // 申请权限
-    Map<PermissionGroup, PermissionStatus> permissions = await PermissionHandler().requestPermissions([PermissionGroup.contacts]);
-
-    // 申请结果
-    PermissionStatus permission = await PermissionHandler().checkPermissionStatus(PermissionGroup.contacts);
-
-    if (permission == PermissionStatus.granted){
+    if (await Permission.contacts.request().isGranted) {
       _getContactData();
     }
-
   }
 
   _getContactData() async{
@@ -46,7 +39,7 @@ class _HostPageState extends State<HostPage> with AutomaticKeepAliveClientMixin{
             child: Row(
               children: <Widget>[
                 Text("姓名："),
-                Text(_contact.fullName)
+                Text(_contact.fullName??'')
               ],
             ),
           ),
@@ -55,11 +48,11 @@ class _HostPageState extends State<HostPage> with AutomaticKeepAliveClientMixin{
             child: Row(
               children: <Widget>[
                 Text("手机号："),
-                Text(_contact.phoneNumber)
+                Text(_contact.phoneNumber??'')
               ],
             ),
           ),
-          FlatButton(
+          TextButton(
             child: Text("打开通讯录"),
             onPressed: _openAddressBook,
           )

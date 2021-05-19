@@ -9,7 +9,7 @@ class AddressBookPage extends StatefulWidget {
 
 class _AddressBookPageState extends State<AddressBookPage> with AutomaticKeepAliveClientMixin{
 
-  List<Contact> _list = new List();
+  List<Contact> _list = [];
   final EasyContactPicker _contactPicker = new EasyContactPicker();
 
   @override
@@ -43,8 +43,8 @@ class _AddressBookPageState extends State<AddressBookPage> with AutomaticKeepAli
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Text(contact.fullName),
-          Text(contact.phoneNumber,
+          Text(contact.fullName??""),
+          Text(contact.phoneNumber??"",
             style: TextStyle(
               color: Colors.grey,
             ),
@@ -55,16 +55,10 @@ class _AddressBookPageState extends State<AddressBookPage> with AutomaticKeepAli
   }
 
   _openAddressBook() async{
-    // 申请权限
-    Map<PermissionGroup, PermissionStatus> permissions = await PermissionHandler().requestPermissions([PermissionGroup.contacts]);
 
-    // 申请结果
-    PermissionStatus permission = await PermissionHandler().checkPermissionStatus(PermissionGroup.contacts);
-
-    if (permission == PermissionStatus.granted){
+    if (await Permission.contacts.request().isGranted) {
       _getContactData();
     }
-
   }
 
   _getContactData() async{
