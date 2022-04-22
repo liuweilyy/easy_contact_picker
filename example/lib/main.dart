@@ -68,8 +68,8 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
         items: <BottomNavigationBarItem>[
-          BottomNavigationBarItem(icon: Icon(Icons.home), title:Text("首页")),
-          BottomNavigationBarItem(icon: Icon(Icons.contacts), title:Text("通讯录")),
+          BottomNavigationBarItem(icon: Icon(Icons.home), label:"首页"),
+          BottomNavigationBarItem(icon: Icon(Icons.contacts), label:"通讯录"),
         ],
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,
