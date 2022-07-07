@@ -18,7 +18,9 @@ import io.flutter.plugin.common.MethodChannel.MethodCallHandler;
 import io.flutter.plugin.common.MethodChannel.Result;
 import io.flutter.plugin.common.PluginRegistry;
 import io.flutter.plugin.common.PluginRegistry.Registrar;
-
+import android.content.Context;
+import io.flutter.embedding.engine.plugins.FlutterPlugin;
+import io.flutter.plugin.common.BinaryMessenger;
 /** EasyContactPickerPlugin */
 public class EasyContactPickerPlugin implements MethodCallHandler, PluginRegistry.ActivityResultListener {
 
