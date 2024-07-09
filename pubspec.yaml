@@ -1,6 +1,6 @@
 name: easy_contact_picker
 description: A Flutter contact picker.Writted with pure dart, supported both iOS and Android.
-version: 0.0.2
+version: 1.1.1
 homepage: https://github.com/olaparty/easy_contact_picker
 
 environment:
