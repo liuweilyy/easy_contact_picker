@@ -2,27 +2,27 @@ PODS:
   - easy_contact_picker (0.0.1):
     - Flutter
   - Flutter (1.0.0)
-  - "permission_handler (5.1.0+2)":
+  - permission_handler_apple (9.1.1):
     - Flutter
 
 DEPENDENCIES:
   - easy_contact_picker (from `.symlinks/plugins/easy_contact_picker/ios`)
   - Flutter (from `Flutter`)
-  - permission_handler (from `.symlinks/plugins/permission_handler/ios`)
+  - permission_handler_apple (from `.symlinks/plugins/permission_handler_apple/ios`)
 
 EXTERNAL SOURCES:
   easy_contact_picker:
     :path: ".symlinks/plugins/easy_contact_picker/ios"
   Flutter:
     :path: Flutter
-  permission_handler:
-    :path: ".symlinks/plugins/permission_handler/ios"
+  permission_handler_apple:
+    :path: ".symlinks/plugins/permission_handler_apple/ios"
 
 SPEC CHECKSUMS:
   easy_contact_picker: 9ab9dc70e8ddde6e76a19ffc482d7bf899868730
-  Flutter: 434fef37c0980e73bb6479ef766c45957d4b510c
-  permission_handler: ccb20a9fad0ee9b1314a52b70b76b473c5f8dab0
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+  permission_handler_apple: e76247795d700c14ea09e3a2d8855d41ee80a2e6
 
-PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
+PODFILE CHECKSUM: ef19549a9bc3046e7bb7d2fab4d021637c0c58a3
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.10.2
